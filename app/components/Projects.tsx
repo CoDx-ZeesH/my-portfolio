@@ -12,6 +12,7 @@ import {
   AnimatePresence,
   useSpring,
   useTransform,
+  Variants,
 } from 'framer-motion';
 
 /* ─── project data ──────────────────────────────────── */
@@ -275,7 +276,7 @@ function FloatCard({ project, index, pos, isSelected, isFaded, onSelect }: Float
         rotateY: tiltX,
         '--card-accent': project.accent,
         zIndex: isSelected ? 50 : 5,
-      } as React.CSSProperties}
+      } as unknown as React.CSSProperties}
       initial={{ opacity: 0, scale: 0.7 }}
       animate={{
         opacity: isFaded ? 0.15 : 1,
@@ -322,13 +323,13 @@ function ProjectDetail({
   project: Project;
   onClose: () => void;
 }) {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: {},
     show: {
       transition: { staggerChildren: 0.07, delayChildren: 0.15 },
     },
   };
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 24 },
     show: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 180, damping: 22 } },
   };
@@ -600,7 +601,7 @@ function usePhysics(
 
     rafRef.current = requestAnimationFrame(tick);
     return () => { if (rafRef.current) cancelAnimationFrame(rafRef.current); };
-  }, [paused, initialized.current]);
+  }, [paused, fieldW, fieldH]);
 
   return positions;
 }
