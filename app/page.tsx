@@ -7,7 +7,6 @@ import Hero from './components/Hero';
 import About from './components/About';
 import ExperienceTimeline from './components/ExperienceTimeline';
 import Projects from './components/Projects';
-import Speaking from './components/Speaking';
 import Community from './components/Community';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -96,8 +95,6 @@ export default function Home() {
         return <ExperienceTimeline />;
       case 'projects':
         return <Projects />;
-      case 'speaking':
-        return <Speaking />;
       case 'community':
         return <Community />;
       case 'contact':
@@ -115,7 +112,7 @@ export default function Home() {
           {renderSection()}
         </div>
       </div>
-      <Footer onNavigate={navigateTo} />
+      <Footer />
     </>
   );
 }

@@ -92,13 +92,6 @@ export default function Hero({ onNavigate }: HeroProps) {
             <span className="stat-label">COUNTRIES CONNECTED</span>
           </div>
         </div>
-
-        {/* Bottom Bar */}
-        <div className="hero-bottom">
-          <span>↙</span>
-          <span className="hero-scroll">SCROLL TO EXPLORE ↓</span>
-          <span>BASED IN PAKISTAN</span>
-        </div>
       </div>
     </section>
   );
