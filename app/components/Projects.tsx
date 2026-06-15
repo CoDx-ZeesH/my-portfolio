@@ -12,6 +12,7 @@ import {
   AnimatePresence,
   useSpring,
   useTransform,
+  MotionStyle,
   Variants,
 } from 'framer-motion';
 
@@ -264,19 +265,20 @@ function FloatCard({ project, index, pos, isSelected, isFaded, onSelect }: Float
 
   const tiltX = useTransform(springX, [0, 1200], [-4, 4]);
   const tiltY = useTransform(springY, [0, 700], [4, -4]);
+  const cardStyle: MotionStyle & { '--card-accent': string } = {
+    x: springX,
+    y: springY,
+    rotateX: tiltY,
+    rotateY: tiltX,
+    '--card-accent': project.accent,
+    zIndex: isSelected ? 50 : 5,
+  };
 
   return (
     <motion.div
       className="fpc"
       layoutId={`fpc-${project.id}`}
-      style={{
-        x: springX,
-        y: springY,
-        rotateX: tiltY,
-        rotateY: tiltX,
-        '--card-accent': project.accent,
-        zIndex: isSelected ? 50 : 5,
-      } as unknown as React.CSSProperties}
+      style={cardStyle}
       initial={{ opacity: 0, scale: 0.7 }}
       animate={{
         opacity: isFaded ? 0.15 : 1,
