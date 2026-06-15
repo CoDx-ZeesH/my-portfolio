@@ -53,7 +53,7 @@ export default function Navbar({ activeSection, onNavigate }: NavbarProps) {
             className="navbar-cta"
             onClick={() => handleNav('contact')}
           >
-            LET'S CONNECT
+            LET&apos;S CONNECT
             <span className="arrow-icon">↗</span>
           </button>
 
@@ -85,7 +85,7 @@ export default function Navbar({ activeSection, onNavigate }: NavbarProps) {
           onClick={() => handleNav('contact')}
           style={{ justifyContent: 'center', marginTop: '8px' }}
         >
-          LET'S CONNECT
+          LET&apos;S CONNECT
           <span className="arrow-icon">↗</span>
         </button>
       </div>
