@@ -1,6 +1,7 @@
 import './globals.css'
 import './experience-timeline.css'
 import type { Metadata } from 'next'
+import CursorGlow from './components/CursorGlow'
 
 export const metadata: Metadata = {
   title: 'Zeeshan | Community Builder · Speaker · Developer',
@@ -20,6 +21,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body>
+        <CursorGlow />
         {children}
       </body>
     </html>
