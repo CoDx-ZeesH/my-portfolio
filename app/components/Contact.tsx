@@ -12,11 +12,7 @@ export default function Contact() {
             I&apos;m always excited to connect with builders, developers, founders, students, community leaders, and anyone curious enough to create something meaningful.
           </p>
 
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', marginTop: '1rem' }}>
-            <a href="mailto:mohammad.zeeshan.tech@gmail.com" className="btn btn-primary glow-element">
-              EMAIL ME ↗
-            </a>
-          </div>
+      
         </div>
 
         <div className="contact-right" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginTop: '2rem' }}>
@@ -49,7 +45,9 @@ export default function Contact() {
             <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.2rem', color: 'var(--text-primary)' }}>
               <span>✉️</span> Email
             </h3>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>For collaborations, partnerships, speaking opportunities, internships, and project discussions.</p>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}> 
+              mohammad.zeeshan.tech
+              @gmail.com</p>
           </a>
         </div>
 
