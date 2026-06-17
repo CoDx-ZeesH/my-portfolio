@@ -51,10 +51,6 @@ export default function Hero({ onNavigate }: HeroProps) {
 
           {/* Right Column */}
           <div className="hero-right">
-            <div className="hero-mode">
-              <span className="hero-mode-label">CURRENT MODE</span>
-              <span className="hero-mode-value">BUILDER</span>
-            </div>
 
             <div className="hero-image-container">
               <Image
@@ -67,7 +63,7 @@ export default function Hero({ onNavigate }: HeroProps) {
                 <span className="tag">ORGANIZER</span>
                 <span className="tag">SPEAKER</span>
                 <span className="tag">LEARNER</span>
-                <span className="tag">MAKER</span>
+                <span className="tag">BUILDER</span>
               </div>
             </div>
           </div>

@@ -12,8 +12,7 @@ const navItems = [
   { num: '02', label: 'ABOUT', section: 'about' },
   { num: '03', label: 'EXPERIENCES', section: 'experiences' },
   { num: '04', label: 'PROJECTS', section: 'projects' },
-  { num: '05', label: 'COMMUNITY', section: 'community' },
-  { num: '06', label: 'CONTACT', section: 'contact' },
+  { num: '05', label: 'CONTACT', section: 'contact' },
 ];
 
 export default function Navbar({ activeSection, onNavigate }: NavbarProps) {
