@@ -339,7 +339,7 @@
 .exp-row__img-wrapper {
   position: relative;
   width: 85%;
-  height: 420px;
+  height: 440px;
   overflow: hidden;
   border: 2px solid var(--border-primary);
   border-radius: var(--radius-sm);

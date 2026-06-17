@@ -13,7 +13,7 @@ const experiences = [
     role: 'Head of Community Relations & Partnerships',
     duration: 'SEP 2025 — PRESENT',
     description:
-      'Leading community engagement, strategic partnerships, sponsorship outreach, and event operations for a growing AI-focused community in Kanpur.',
+      'Leading community engagement, strategic partnerships, sponsorship outreach, Anchoring and event operations for a growing AI-focused community in Kanpur.',
     contributions: [
       'Partnerships & Sponsorships',
       'Event Operations',
@@ -22,7 +22,7 @@ const experiences = [
     ],
     icon: '✦',
     color: '#22d3ee',
-    image: '/experiences/speaking.png',
+    image: '/assets/knpai.png',
     link: '#',
   },
   {
@@ -33,7 +33,7 @@ const experiences = [
     role: 'Core Team Member',
     duration: 'SEP 2025 — PRESENT',
     description:
-      'Contributing to product development, project management, and community initiatives for UPAI Space.',
+      'Contributing to product development, project management, and community initiatives for UPAI Space. building products like rsvp and other event management tools.',
     contributions: [
       'Product Development',
       'Project Management',
@@ -42,7 +42,7 @@ const experiences = [
     ],
     icon: '⚡',
     color: '#a78bfa',
-    image: '/experiences/codeconnect.png',
+    image: '/assets/upai.jpeg',
     link: '#',
   },
   {
@@ -51,7 +51,7 @@ const experiences = [
     category: 'LEADERSHIP',
     title: 'CODEDAY',
     role: 'Regional Manager',
-    duration: 'JAN 2025 — PRESENT',
+    duration: 'JAN 2025 — APR 2026',
     description:
       'Leading regional operations and supporting the execution of student-focused hackathons and developer events across multiple cities.',
     contributions: [
@@ -62,7 +62,7 @@ const experiences = [
     ],
     icon: '</>',
     color: '#22d3ee',
-    image: '/experiences/codeday.png',
+    image: '/assets/cd_delhi.JPG',
     link: '#',
   },
   {
@@ -71,7 +71,7 @@ const experiences = [
     category: 'DEVELOPMENT',
     title: 'WEB WINK',
     role: 'Frontend Web Developer',
-    duration: 'JAN 2025 — PRESENT',
+    duration: 'JAN 2025 — MAY 2026',
     description:
       'Developing and maintaining modern websites while collaborating with clients and teams to deliver responsive, user-friendly web experiences.',
     contributions: [
@@ -82,7 +82,7 @@ const experiences = [
     ],
     icon: '✱',
     color: '#14b8a6',
-    image: '/experiences/webwink.png',
+    image: '/assets/webwink.png',
     link: '#',
   },
   {
@@ -102,7 +102,7 @@ const experiences = [
     ],
     icon: '⬡',
     color: '#a78bfa',
-    image: '/experiences/mlsa.png',
+    image: '/assets/mlsa.jpeg',
     link: '#',
   },
   {
@@ -111,9 +111,9 @@ const experiences = [
     category: 'COMMUNITY',
     title: 'HACKERABAD',
     role: 'Community Volunteer',
-    duration: 'MAR 2023 — PRESENT',
+    duration: 'MAR 2023 — SEP 2025',
     description:
-      'Supporting one of India\'s leading technology communities through outreach, community engagement, content initiatives, and growth-focused operations.',
+      'Supported one of the local technology communities through outreach, community engagement, content initiatives, and growth-focused operations.',
     contributions: [
       'Community Growth',
       'Outreach',
@@ -122,7 +122,7 @@ const experiences = [
     ],
     icon: '◇',
     color: '#f59e0b',
-    image: '/experiences/gdsc.png',
+    image: '/assets/codedayy.jpg',
     link: '#',
   },
   {
@@ -131,7 +131,7 @@ const experiences = [
     category: 'VOLUNTEER',
     title: 'CODEDAY',
     role: 'Volunteer',
-    duration: 'JUN 2024 — JAN 2025',
+    duration: 'JUN 2023 — JAN 2025',
     description:
       'Supported hackathons and student-focused events as a volunteer by assisting with event logistics and operations.',
     contributions: [
@@ -142,7 +142,7 @@ const experiences = [
     ],
     icon: '⊕',
     color: '#22d3ee',
-    image: '/experiences/codeday.png',
+    image: '/assets/cd.JPG',
     link: '#',
   },
   {
@@ -153,7 +153,7 @@ const experiences = [
     role: 'Social Media Content Creator',
     duration: 'SEP 2025 — PRESENT',
     description:
-      'Creating content focused on technology, personal growth, community building, events, and digital storytelling.',
+      'Creating content focused on  personal growth, community building, events, and digital storytelling. Did my first paid collaboration in Jan 2026.',
     contributions: [
       'Content Creation',
       'Branding',
@@ -162,7 +162,7 @@ const experiences = [
     ],
     icon: '📸',
     color: '#a78bfa',
-    image: '/experiences/speaking.png',
+    image: '/assets/social-exp.png',
     link: '#',
   },
   {
@@ -173,7 +173,7 @@ const experiences = [
     role: 'Content Creator',
     duration: 'NOV 2020 — PRESENT',
     description:
-      'Producing educational and community-focused content while experimenting with digital media, audience engagement, and content strategy.',
+      'Created gaming content for around 5 years and now focusing on content related to personal growth, community building, and digital storytelling.',
     contributions: [
       'Content Strategy',
       'Video Production',
@@ -182,7 +182,7 @@ const experiences = [
     ],
     icon: '▶',
     color: '#ef4444',
-    image: '/experiences/speaking.png',
+    image: '/assets/youtube.png',
     link: '#',
   },
   {
@@ -202,7 +202,7 @@ const experiences = [
     ],
     icon: '♡',
     color: '#f59e0b',
-    image: '/experiences/muskurahat.png',
+    image: '/assets/muskurahat.png',
     link: '#',
   },
 ];
@@ -331,21 +331,7 @@ function ExperienceRow({
         </div>
       </motion.div>
 
-      <motion.a
-        href={experience.link}
-        className="exp-row__cta"
-        style={{ borderColor: `${experience.color}40`, color: experience.color }}
-        initial={{ opacity: 0, y: 8 }}
-        animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ delay: 0.46 }}
-        whileHover={{
-          borderColor: experience.color,
-          boxShadow: `3px 3px 0 ${experience.color}30`,
-          x: 2,
-        }}
-      >
-        <span className="arrow-icon">↗</span>
-      </motion.a>
+
     </motion.div>
   );
 
