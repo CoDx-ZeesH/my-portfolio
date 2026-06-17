@@ -17,15 +17,14 @@ export default function Hero({ onNavigate }: HeroProps) {
             <p className="hero-roles">
               COMMUNITY BUILDER · SPEAKER · DEVELOPER · EXPLORER
             </p>
-
             <h1 className="hero-title">
               BUILDING
               <br />
-              <span className="accent">IMPACT.</span>
+              <span className="accent">PRODUCTS.</span>
               <br />
-              CREATING
+              GROWING
               <br />
-              <span className="accent">OPPORTUNITIES.</span>
+              <span className="accent">COMMUNITIES.</span>
             </h1>
 
             <p className="hero-subtitle">
