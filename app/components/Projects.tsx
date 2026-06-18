@@ -39,8 +39,8 @@ const PROJECTS = [
     problem: 'AI communities are often fragmented across multiple platforms, making it difficult for members to collaborate effectively, discover opportunities, and engage in meaningful discussions.',
     solution: 'UPAI Space provides a centralized environment for community engagement, knowledge sharing, networking, and collaborative learning among AI enthusiasts.',
     metrics: [{ label: 'Status', value: 'Active' }],
-    github: '#',
-    live: '#',
+    github: 'https://github.com/CoDx-ZeesH/UPAI',
+    live: 'https://upai.space/',
   },
   {
     id: 'kanpur-ai-space',
@@ -64,8 +64,8 @@ const PROJECTS = [
     problem: 'Many aspiring AI practitioners lack access to local communities where they can learn, collaborate, and find mentorship opportunities.',
     solution: 'Kanpur AI Space provides a dedicated ecosystem for AI enthusiasts to connect, learn, build projects, attend events, and share knowledge.',
     metrics: [{ label: 'Status', value: 'Active' }],
-    github: '#',
-    live: '#',
+    github: 'https://github.com/CoDx-ZeesH/KanpurAISpace',
+    live: 'https://kanpurai.space/',
   },
   {
     id: 'rsvp',
@@ -89,8 +89,8 @@ const PROJECTS = [
     problem: 'Manual event registration and attendee tracking processes often lead to inefficiencies, communication gaps, and operational challenges.',
     solution: 'The RSVP platform automates event registration, attendee management, communication workflows, and event tracking through a centralized management system.',
     metrics: [{ label: 'Status', value: 'Completed' }],
-    github: '#',
-    live: '#',
+    github: 'https://github.com/CoDx-ZeesH',
+    live: 'https://rsvp.kanpurai.space/',
   },
   {
     id: 'certverify',
@@ -114,8 +114,8 @@ const PROJECTS = [
     problem: 'Traditional certificate generation and verification processes are time-consuming, prone to errors, and difficult to scale.',
     solution: 'CertVerify automates certificate creation, issuance, verification, and management, allowing organizations to generate certificates at scale while maintaining credibility.',
     metrics: [{ label: 'Status', value: 'Completed' }],
-    github: '#',
-    live: '#',
+    github: 'https://github.com/CoDx-ZeesH/certverify',
+    live: 'javascript:void(0)',
   },
   {
     id: 'nexus-os',
@@ -140,8 +140,8 @@ const PROJECTS = [
     problem: 'Users often rely on multiple disconnected tools for productivity, communication, automation, and information management, resulting in fragmented workflows and reduced efficiency.',
     solution: 'Nexus OS is being developed as a unified operating layer that connects tools, automates workflows, and leverages AI capabilities to streamline digital operations.',
     metrics: [{ label: 'Status', value: 'Development' }],
-    github: '#',
-    live: '#',
+    github: 'https://github.com/CoDx-ZeesH/NexusOS',
+    live: 'javascript:void(0)',
   },
   {
     id: 'rail-sanchalak',
@@ -165,8 +165,8 @@ const PROJECTS = [
     problem: 'Railway operations involve complex workflows that require improved coordination, visibility, and process management.',
     solution: 'Rail Sanchalak provides a centralized digital platform for managing railway-related operations, monitoring activities, and improving operational efficiency through technology-driven processes.',
     metrics: [{ label: 'Status', value: 'Active' }],
-    github: '#',
-    live: '#',
+    github: 'https://github.com/CoDx-ZeesH/Rail-Sanchalak',
+    live: 'javascript:void(0)',
   },
   {
     id: 'optifi',
@@ -191,8 +191,8 @@ const PROJECTS = [
     problem: 'Managing finances across multiple accounts, expenses, budgets, and financial tools can be fragmented and time-consuming. Users often lack clear visibility into their financial health and spending patterns.',
     solution: 'Optifi provides a centralized finance management system that enables users to monitor financial activities, analyze spending behavior, manage budgets, and gain actionable insights for better financial planning and decision-making.',
     metrics: [{ label: 'Status', value: 'Active' }],
-    github: '#',
-    live: '#',
+    github: 'https://github.com/CoDx-ZeesH/OptiFi',
+    live: 'javascript:void(0)',
   },
 ] as const;
 
