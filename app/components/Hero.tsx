@@ -45,6 +45,14 @@ export default function Hero({ onNavigate }: HeroProps) {
               >
                 VIEW MY WORK ↗
               </button>
+              <a
+                className="btn btn-outline"
+                href="/Mohammad_Zeeshan_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                VIEW RESUME ↗
+              </a>
             </div>
           </div>
 
